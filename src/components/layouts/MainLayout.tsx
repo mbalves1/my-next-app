@@ -12,7 +12,6 @@ type MainLayoutProps = {
 export function MainLayout({ children }: MainLayoutProps) {
 
   const { notifications, showNotification } = useNotificationStore()
-
   const clickHere = () => {
     // Assuming your store has an addNotification method
     showNotification('Vai', 'error', 2000)
